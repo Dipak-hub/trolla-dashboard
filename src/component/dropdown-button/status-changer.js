@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
+import {  useDispatch } from "react-redux";
 
 const StatusUpdater = ({ bootstapId, id, status, changeStatus }) => {
   const dispatch = useDispatch();
