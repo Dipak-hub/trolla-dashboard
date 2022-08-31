@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const rootClient = axios.create();
+const rootClient = axios.create({
+  baseURL:"https://dashboard.trollaexpress.com"
+});
 rootClient.defaults.timeout = 4000;
 rootClient.interceptors.request.use(
   async (config) => {
