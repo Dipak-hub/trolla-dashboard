@@ -16,7 +16,7 @@ export const login = createAsyncThunk(
   "user-login",
   async (user, { rejectWithValue }) => {
     try {
-      const response = await axios.post("https://dashboard.trollaexpress.com//api/v1/login",user)
+      const response = await axios.post("https://dashboard.trollaexpress.com/api/v1/login",user)
       // console.log(response.data.user);
       return response.data;
     } catch (error) {
